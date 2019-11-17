@@ -1,0 +1,13 @@
+{
+  "name": "vndatest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fabricio Polo <fabricio.polo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile-sass": "node-sass src/sass/main.scss src/styles.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
