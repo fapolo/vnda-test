@@ -17,4 +17,10 @@ $(document).ready(function() {
     fade: true,
     cssEase: "linear"
   });
+
+  instafetch.init({
+    accessToken: "1316473856.1677ed0.95337adab33041b2a436daf59c922c11",
+    target: "instafeed",
+    numOfPics: 6
+  });
 });
