@@ -6,6 +6,9 @@ $color-base-pastel: #f5efd9;
 $color-base-highlight: #cf6823;
 $color-base-black: #272727;
 
+$font-playfair: "Playfair Display", serif;
+$font-ptsans: "PT Sans", sans-serif;
+
 .header {
   display: flex;
   flex-direction: column;
@@ -45,7 +48,7 @@ $color-base-black: #272727;
       }
 
       &:first-of-type {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -54,7 +57,7 @@ $color-base-black: #272727;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 1rem;
+    margin: 1.5rem;
 
     &__search {
       width: 50vw;
@@ -66,7 +69,6 @@ $color-base-black: #272727;
       &--input {
         width: 7rem;
         padding: 0.7rem;
-        margin-left: 0.2rem;
         border: {
           top: 0;
           left: 0;
@@ -94,7 +96,8 @@ $color-base-black: #272727;
         margin-right: 0.7rem;
         transition: all 0.2s;
 
-        &:hover {
+        &:hover,
+        &:active {
           color: $color-base-highlight;
         }
       }
@@ -103,8 +106,8 @@ $color-base-black: #272727;
 
   .nav {
     position: absolute;
-    top: 12vh;
-    width: 100vw;
+    top: 13vh;
+    width: 70vw;
     height: 100vh;
     transform: translateX(-72%);
     transition: all 0.4s ease-in;
@@ -114,7 +117,7 @@ $color-base-black: #272727;
       background-color: $color-base-pastel;
       padding: 1.3rem 1rem;
       top: 0;
-      left: 70vw;
+      left: 50vw;
       border: 0;
       border-radius: 0 0.5rem 0.5rem 0;
       cursor: pointer;
