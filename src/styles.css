@@ -78,14 +78,14 @@ body {
     width: 70vw;
     height: 100vh;
     z-index: 99;
-    transform: translateX(-72%);
+    transform: translateX(-103%);
     transition: all 0.4s ease-in; }
     .header .nav__toggle {
       position: absolute;
       background-color: #f5efd9;
       padding: 1.3rem 1rem;
       top: 0;
-      left: 49vw;
+      left: 70vw;
       border: 0;
       border-radius: 0 0.5rem 0.5rem 0;
       cursor: pointer;
@@ -110,7 +110,7 @@ body {
       .header .nav__toggle .hamburger::after {
         top: 6px; }
     .header .nav__menu {
-      width: 70%;
+      width: 100%;
       background-color: #f5efd9;
       padding: 2rem;
       list-style: none;
