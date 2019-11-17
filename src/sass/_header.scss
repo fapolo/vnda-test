@@ -15,12 +15,7 @@ $font-ptsans: "PT Sans", sans-serif;
 
   .alert__promo {
     background: $color-base-pastel;
-    padding: {
-      top: 0.5rem;
-      bottom: 0.5rem;
-      left: 2rem;
-      right: 2rem;
-    }
+    padding: 0.5rem 2rem;
     font-size: 1.2em;
     text-align: center;
 
@@ -35,21 +30,6 @@ $font-ptsans: "PT Sans", sans-serif;
       transition: all 0.5s;
       padding: 0.7em;
       border-radius: 7px;
-
-      &:link,
-      &:visited {
-        color: $color-base-highlight;
-      }
-
-      &:hover,
-      &:active {
-        background-color: $color-base-highlight;
-        color: $color-white;
-      }
-
-      &:first-of-type {
-        margin-right: 0.5rem;
-      }
     }
   }
 
@@ -89,12 +69,17 @@ $font-ptsans: "PT Sans", sans-serif;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
 
       p {
         font-size: 1.4em;
         margin-right: 0.7rem;
         transition: all 0.2s;
+        cursor: pointer;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
 
         &:hover,
         &:active {

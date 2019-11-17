@@ -16,10 +16,7 @@ body {
   flex-direction: column; }
   .header .alert__promo {
     background: #f5efd9;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0.5rem 2rem;
     font-size: 1.2em;
     text-align: center; }
     .header .alert__promo p {
@@ -31,13 +28,6 @@ body {
       transition: all 0.5s;
       padding: 0.7em;
       border-radius: 7px; }
-      .header .alert__promo--link:link, .header .alert__promo--link:visited {
-        color: #cf6823; }
-      .header .alert__promo--link:hover, .header .alert__promo--link:active {
-        background-color: #cf6823;
-        color: #fff; }
-      .header .alert__promo--link:first-of-type {
-        margin-right: 0.5rem; }
   .header .header-boxes {
     display: flex;
     flex-direction: row;
@@ -64,12 +54,15 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center;
-      cursor: pointer; }
+      align-items: center; }
       .header .header-boxes__login p {
         font-size: 1.4em;
         margin-right: 0.7rem;
-        transition: all 0.2s; }
+        transition: all 0.2s;
+        cursor: pointer; }
+        .header .header-boxes__login p a {
+          color: inherit;
+          text-decoration: none; }
         .header .header-boxes__login p:hover, .header .header-boxes__login p:active {
           color: #cf6823; }
   .header .nav {
@@ -133,11 +126,10 @@ body {
       transform: rotate(-45deg) translateY(-9px); }
 
 .slider {
-  width: 100vw;
-  margin-bottom: 2rem; }
+  width: 100vw; }
   .slider div img {
     width: 100%;
-    min-height: 300px;
+    max-height: 350px;
     object-fit: cover; }
   .slider .slick-dots {
     width: 0;
@@ -164,6 +156,7 @@ body {
   .highlights .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem; }
     .highlights .card__img {
@@ -355,8 +348,7 @@ footer {
   font-size: 5em;
   color: #cf6823;
   font-family: "Playfair Display", serif;
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-top: 1rem; }
 
 .svg-icon {
   font-size: 2em; }
@@ -378,3 +370,77 @@ footer {
 .svg-icon circle {
   stroke: #cf6823;
   stroke-width: 1; }
+
+@media only screen and (min-width: 480px) {
+  .header .alert__promo--link:link, .header .alert__promo--link:visited {
+    color: #cf6823; }
+  .header .alert__promo--link:hover, .header .alert__promo--link:active {
+    background-color: #cf6823;
+    color: #fff; }
+  .header .alert__promo--link:first-of-type {
+    margin-right: 0.5rem; }
+  .footer .contactus {
+    margin-bottom: 2rem; }
+  .footer .sitemap {
+    width: 80%;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem; } }
+
+@media only screen and (min-width: 768px) {
+  .header .alert__promo {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .header .alert__promo p {
+      margin-bottom: 0; }
+    .header .alert__promo--link {
+      font-size: 1.2em; }
+      .header .alert__promo--link:first-of-type {
+        margin-right: 0; }
+  .header .header-boxes {
+    margin: 1rem; }
+    .header .header-boxes__search--input {
+      width: 10rem; }
+      .header .header-boxes__search--input:focus {
+        width: 13rem; }
+  .header .nav {
+    width: 50vw;
+    top: 10vh; }
+    .header .nav__toggle {
+      left: 50vw; }
+  .highlights {
+    width: 70vw;
+    grid-auto-flow: column;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 50%;
+    transform: translateX(-50%); }
+  .blog {
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); }
+  #instafeed {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1px; }
+    #instafeed article a figure img {
+      width: 16.5vw;
+      height: 16.5vw; }
+  .subscribe {
+    flex-direction: row; }
+    .subscribe__message {
+      width: 50%;
+      margin-bottom: 0; }
+    .subscribe__form {
+      width: 50%; }
+      .subscribe__form--input {
+        width: 50%; }
+      .subscribe__form--btn {
+        transition: all 0.2s; }
+      .subscribe__form--btn:hover {
+        opacity: 0.8; } }

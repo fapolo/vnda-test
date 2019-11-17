@@ -11,11 +11,10 @@ $font-ptsans: "PT Sans", sans-serif;
 
 .slider {
   width: 100vw;
-  margin-bottom: 2rem;
 
   div img {
     width: 100%;
-    min-height: 300px;
+    max-height: 350px;
     object-fit: cover;
   }
 
