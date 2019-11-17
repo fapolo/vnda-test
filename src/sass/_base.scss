@@ -18,7 +18,7 @@ $color-base-black: #272727;
       left: 2rem;
       right: 2rem;
     }
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
 
     p {
@@ -28,13 +28,20 @@ $color-base-black: #272727;
     }
 
     &--link {
-      text-decoration: none;
       color: inherit;
       transition: all 0.5s;
+      padding: 0.7em;
+      border-radius: 7px;
 
-      &:hover {
+      &:link,
+      &:visited {
         color: $color-base-highlight;
-        border-bottom: 1px solid $color-base-highlight;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $color-base-highlight;
+        color: $color-white;
       }
 
       &:first-of-type {
@@ -91,6 +98,94 @@ $color-base-black: #272727;
           color: $color-base-highlight;
         }
       }
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 12vh;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-72%);
+    transition: all 0.4s ease-in;
+
+    &__toggle {
+      position: absolute;
+      background-color: $color-base-pastel;
+      padding: 1.3rem 1rem;
+      top: 0;
+      left: 70vw;
+      border: 0;
+      border-radius: 0 0.5rem 0.5rem 0;
+      cursor: pointer;
+      box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.1);
+
+      .hamburger {
+        display: block;
+        position: relative;
+      }
+
+      .hamburger,
+      .hamburger::before,
+      .hamburger::after {
+        width: 1.5rem;
+        height: 2px;
+        background-color: $color-base-highlight;
+        transition: all 0.2s linear;
+      }
+
+      .hamburger::before,
+      .hamburger::after {
+        content: "";
+        position: absolute;
+        right: 0;
+      }
+
+      .hamburger::before {
+        bottom: 6px;
+      }
+
+      .hamburger::after {
+        top: 6px;
+      }
+    }
+
+    &__menu {
+      width: 70%;
+      background-color: $color-base-pastel;
+      padding: 2rem;
+      list-style: none;
+      box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.2);
+
+      &--item {
+        width: 80%;
+        padding: 1rem;
+        transition: all 0.2s;
+
+        &:hover,
+        &:active {
+          background-color: $color-base-highlight;
+          color: white;
+          font-weight: bold;
+          transform: translateX(10%);
+        }
+      }
+    }
+  }
+
+  .open-nav {
+    transform: translateX(0);
+
+    .open-hamburger {
+      background-color: $color-base-pastel;
+    }
+
+    .open-hamburger::before {
+      transform: rotate(45deg) translateY(9px);
+    }
+
+    .open-hamburger::after {
+      transform: rotate(-45deg) translateY(-9px);
     }
   }
 }
