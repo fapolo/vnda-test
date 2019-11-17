@@ -6,10 +6,10 @@
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #4691f6;
+  fill: $color-base-highlight;
 }
 
 .svg-icon circle {
-  stroke: #4691f6;
+  stroke: $color-base-highlight;
   stroke-width: 1;
 }

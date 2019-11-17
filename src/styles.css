@@ -1,3 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Playfair+Display:400,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "PT Sans", sans-serif;
+  color: #272727;
+  font-size: 62.5%; }
+
+.header {
+  display: flex;
+  flex-direction: column; }
+  .header .alert__promo {
+    background: #f5efd9;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.4em;
+    text-align: center; }
+    .header .alert__promo p {
+      font-weight: bold;
+      font-size: 1.4em;
+      margin-bottom: 0.5rem; }
+    .header .alert__promo--link {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.5s; }
+      .header .alert__promo--link:hover {
+        color: #cf6823;
+        border-bottom: 1px solid #cf6823; }
+      .header .alert__promo--link:first-of-type {
+        margin-right: 1rem; }
+  .header .header-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem; }
+    .header .header-boxes__search {
+      width: 50vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .header .header-boxes__search--input {
+        width: 7rem;
+        padding: 0.7rem;
+        margin-left: 0.2rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #cf6823;
+        transition: all 0.5s; }
+        .header .header-boxes__search--input:focus {
+          width: 10rem; }
+    .header .header-boxes__login {
+      width: 50vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .header .header-boxes__login p {
+        font-size: 1.4em;
+        margin-right: 0.7rem;
+        transition: all 0.2s; }
+        .header .header-boxes__login p:hover {
+          color: #cf6823; }
+
+.logo {
+  text-align: center;
+  font-size: 5em;
+  color: #cf6823;
+  font-family: "Playfair Display", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.svg-icon {
+  font-size: 2em; }
+
 .svg-icon {
   width: 1em;
   height: 1em; }
@@ -5,8 +89,8 @@
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #4691f6; }
+  fill: #cf6823; }
 
 .svg-icon circle {
-  stroke: #4691f6;
+  stroke: #cf6823;
   stroke-width: 1; }

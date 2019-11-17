@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700|Playfair+Display:400,700&display=swap");
+
+.logo {
+  text-align: center;
+  font-size: 5em;
+  color: $color-base-highlight;
+  font-family: "Playfair Display", sans-serif;
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.svg-icon {
+  font-size: 2em;
+}
