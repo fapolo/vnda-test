@@ -76,7 +76,6 @@ body {
     position: absolute;
     top: 13vh;
     width: 70vw;
-    height: 100vh;
     z-index: 99;
     transform: translateX(-100%);
     transition: all 0.4s ease-in; }
@@ -85,7 +84,7 @@ body {
       background-color: #f5efd9;
       padding: 1.3rem 1rem;
       top: 0;
-      left: 70vw;
+      left: 69vw;
       border: 0;
       border-radius: 0 0.5rem 0.5rem 0;
       cursor: pointer;
@@ -203,6 +202,101 @@ body {
         font-size: 1.8em;
         font-weight: bold;
         text-align: center; }
+
+.instagram {
+  width: 100vw;
+  margin: 1rem; }
+
+.subscribe {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #f5efd9;
+  font-size: 1.4em;
+  line-height: 1.5em; }
+  .subscribe__message {
+    margin-bottom: 1rem; }
+  .subscribe__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .subscribe__form--input, .subscribe__form--btn {
+      padding: 0.2rem 0.4rem;
+      border: 1px solid #cf6823; }
+    .subscribe__form--input {
+      width: 50%; }
+    .subscribe__form--btn {
+      color: #f6f6f6;
+      background-color: #cf6823;
+      font-weight: bold;
+      cursor: pointer; }
+
+footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: #272727;
+  color: #f6f6f6;
+  display: grid;
+  grid-auto-flow: row; }
+  footer .contactus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem; }
+    footer .contactus__mail, footer .contactus__find {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.2em; }
+      footer .contactus__mail .svg-icon, footer .contactus__find .svg-icon {
+        margin-right: 0.2rem; }
+  footer .sitemap {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 0.5rem;
+    margin-left: 50%;
+    margin-bottom: 1rem;
+    transform: translateX(-50%); }
+    footer .sitemap__list {
+      list-style: none;
+      margin-bottom: 1rem; }
+      footer .sitemap__list li {
+        font-size: 1.4em; }
+        footer .sitemap__list li:first-of-type {
+          font-weight: bold; }
+        footer .sitemap__list li a {
+          color: inherit;
+          text-decoration: none; }
+          footer .sitemap__list li a:hover, footer .sitemap__list li a:active {
+            text-decoration: underline; }
+  footer .followus {
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center; }
+    footer .followus p {
+      font-size: 1.4em;
+      margin-bottom: 1rem; }
+    footer .followus .svg-icon {
+      font-size: 4em;
+      cursor: pointer; }
+      footer .followus .svg-icon:hover path,
+      footer .followus .svg-icon:active path {
+        transition: all 0.2s;
+        fill: #f5efd9; }
+
+.disclaimer {
+  padding: 0.5rem 1rem; }
+  .disclaimer a {
+    color: inherit;
+    font-size: 1.2em;
+    transition: all 0.2s; }
+    .disclaimer a:hover, .disclaimer a:active {
+      color: #cf6823; }
 
 .logo {
   text-align: center;
