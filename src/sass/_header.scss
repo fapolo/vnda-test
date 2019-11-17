@@ -109,6 +109,7 @@ $font-ptsans: "PT Sans", sans-serif;
     top: 13vh;
     width: 70vw;
     height: 100vh;
+    z-index: 99;
     transform: translateX(-72%);
     transition: all 0.4s ease-in;
 
@@ -117,7 +118,7 @@ $font-ptsans: "PT Sans", sans-serif;
       background-color: $color-base-pastel;
       padding: 1.3rem 1rem;
       top: 0;
-      left: 50vw;
+      left: 49vw;
       border: 0;
       border-radius: 0 0.5rem 0.5rem 0;
       cursor: pointer;
