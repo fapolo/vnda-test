@@ -91,10 +91,11 @@ $font-ptsans: "PT Sans", sans-serif;
 
   .nav {
     position: absolute;
-    top: 13vh;
+    top: 80px;
+    right: 0;
     width: 70vw;
     z-index: 99;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 0.4s ease-in;
 
     &__toggle {
@@ -102,11 +103,11 @@ $font-ptsans: "PT Sans", sans-serif;
       background-color: $color-base-pastel;
       padding: 1.3rem 1rem;
       top: 0;
-      left: 69vw;
+      right: 70vw;
       border: 0;
-      border-radius: 0 0.5rem 0.5rem 0;
+      border-radius: 0.5rem 0 0 0.5rem;
       cursor: pointer;
-      box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.1);
+      box-shadow: -5px 3px 7px rgba(0, 0, 0, 0.1);
 
       .hamburger {
         display: block;
@@ -147,14 +148,16 @@ $font-ptsans: "PT Sans", sans-serif;
       &--item {
         width: 80%;
         padding: 1rem;
+        margin: 0 auto;
         transition: all 0.2s;
+        text-align: center;
 
         &:hover,
         &:active {
           background-color: $color-base-highlight;
           color: white;
           font-weight: bold;
-          transform: translateX(10%);
+          transform: translateX(-10%);
         }
       }
     }
@@ -162,7 +165,7 @@ $font-ptsans: "PT Sans", sans-serif;
 
   .open-nav {
     transform: translateX(0);
-    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 7px 10px rgba(0, 0, 0, 0.2);
 
     .open-hamburger {
       background-color: $color-base-pastel;
