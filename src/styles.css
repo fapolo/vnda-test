@@ -226,6 +226,8 @@ body {
         font-size: 1.8em;
         font-weight: bold;
         text-align: center; }
+    .blog .post:hover .post__link--title, .blog .post:active .post__link--title {
+      text-decoration: underline; }
 
 .instagram {
   padding: 1rem 0;
@@ -490,7 +492,24 @@ footer {
         .header .nav__menu--item .nav__menu--link {
           font-size: 1.4em; }
   .highlights {
-    width: 50%; }
+    width: 50%;
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+    .highlights .card {
+      position: relative;
+      cursor: pointer;
+      transition: all 0.2s; }
+      .highlights .card__btn {
+        opacity: 0;
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.2s; }
+      .highlights .card:hover {
+        opacity: 0.5; }
+        .highlights .card:hover .card__btn {
+          opacity: 1; }
   .footer {
     grid-auto-flow: column;
     align-items: auto;

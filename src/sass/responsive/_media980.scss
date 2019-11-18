@@ -75,6 +75,33 @@
 
   .highlights {
     width: 50%;
+    padding: {
+      top: 4rem;
+      bottom: 4rem;
+    }
+
+    .card {
+      position: relative;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &__btn {
+        opacity: 0;
+        position: absolute;
+        width: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        opacity: 0.5;
+
+        .card__btn {
+          opacity: 1;
+        }
+      }
+    }
   }
 
   .footer {

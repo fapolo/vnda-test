@@ -48,5 +48,12 @@ $font-ptsans: "PT Sans", sans-serif;
         text-align: center;
       }
     }
+
+    &:hover,
+    &:active {
+      .post__link--title {
+        text-decoration: underline;
+      }
+    }
   }
 }
