@@ -2,13 +2,13 @@
   .header {
     .alert__promo {
       padding: {
-        left: 45rem;
-        right: 45rem;
+        left: 20rem;
+        right: 20rem;
       }
     }
 
     .header-boxes {
-      padding: 0 15rem;
+      padding: 0 10rem;
     }
 
     .logo {
@@ -18,7 +18,7 @@
     .nav {
       background-color: $color-base-pastel;
       &__menu {
-        width: 70%;
+        width: 80%;
         margin-left: 50%;
         transform: translateX(-50%);
         justify-content: space-between;
@@ -31,7 +31,7 @@
   }
 
   .subscribe {
-    padding: 2rem 25rem;
+    padding: 2rem 10rem;
 
     &__form {
       justify-content: space-evenly;
@@ -39,6 +39,6 @@
   }
 
   .footer {
-    padding: 5rem 25rem;
+    padding: 5rem 10rem;
   }
 }

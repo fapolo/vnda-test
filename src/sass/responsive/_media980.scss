@@ -17,14 +17,14 @@
       width: 100vw;
       position: absolute;
       justify-content: space-between;
-      top: 12vh;
+      top: 110px;
       padding: 0 5rem;
 
       &__search {
         justify-content: left;
 
         &--input {
-          width: 12rem;
+          width: 10rem;
 
           &:focus {
             width: 15rem;
