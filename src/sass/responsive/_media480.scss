@@ -27,7 +27,6 @@
     .sitemap {
       width: 80%;
       grid-auto-flow: column;
-      grid-template-columns: repeat(3, 1fr);
       grid-gap: 0.5rem;
     }
   }

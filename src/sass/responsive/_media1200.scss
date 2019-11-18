@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1200px) {
+  .header {
+    .alert__promo {
+      padding: {
+        left: 45rem;
+        right: 45rem;
+      }
+    }
+
+    .header-boxes {
+      padding: 0 15rem;
+    }
+
+    .logo {
+      margin: 2rem auto;
+    }
+
+    .nav {
+      background-color: $color-base-pastel;
+      &__menu {
+        width: 70%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .blog {
+    width: 60%;
+  }
+
+  .subscribe {
+    padding: 2rem 25rem;
+
+    &__form {
+      justify-content: space-evenly;
+    }
+  }
+
+  .footer {
+    padding: 5rem 25rem;
+  }
+}
