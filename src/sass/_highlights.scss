@@ -24,6 +24,9 @@ $font-ptsans: "PT Sans", sans-serif;
 
     &__img {
       width: 100%;
+      height: 250px;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
 
     &__name {

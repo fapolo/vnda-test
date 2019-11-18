@@ -163,7 +163,10 @@ body {
     align-items: center;
     margin-bottom: 1rem; }
     .highlights .card__img {
-      width: 100%; }
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      margin-bottom: 1rem; }
     .highlights .card__name {
       font-family: "Playfair Display", serif; }
     .highlights .card__name, .highlights .card__price {
@@ -216,7 +219,9 @@ body {
       text-decoration: none;
       color: inherit; }
       .blog .post__link--img {
-        width: 100%; }
+        width: 100%;
+        height: 200px;
+        object-fit: cover; }
       .blog .post__link--tag {
         color: #cf6823;
         font-size: 1.4em;
@@ -482,7 +487,8 @@ footer {
       justify-content: space-around; }
       .header .nav__menu--item {
         width: auto;
-        padding: 0.5rem 1rem; }
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #f5efd9; }
         .header .nav__menu--item:hover, .header .nav__menu--item:active {
           background-color: #f5efd9;
           border-bottom: 1px solid #cf6823;
@@ -493,8 +499,10 @@ footer {
           font-size: 1.4em; }
   .highlights {
     width: 50%;
-    padding-top: 4rem;
-    padding-bottom: 4rem; }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0; }
     .highlights .card {
       position: relative;
       cursor: pointer;
@@ -503,7 +511,7 @@ footer {
         opacity: 0;
         position: absolute;
         width: 70%;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
         transition: all 0.2s; }
       .highlights .card:hover {
@@ -535,6 +543,8 @@ footer {
       margin-left: 50%;
       transform: translateX(-50%);
       justify-content: space-between; }
+  .promo-banner img {
+    height: 450px; }
   .blog {
     width: 60%; }
   .subscribe {
