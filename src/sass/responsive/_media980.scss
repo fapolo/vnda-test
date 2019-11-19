@@ -21,8 +21,6 @@
       padding: 0 5rem;
 
       &__search {
-        justify-content: left;
-
         &--input {
           width: 10rem;
 
@@ -30,10 +28,6 @@
             width: 15rem;
           }
         }
-      }
-
-      &__login {
-        justify-content: right;
       }
     }
 
@@ -75,14 +69,12 @@
   }
 
   .slider {
-  
     div img {
       height: 400px;
     }
   }
 
   .highlights {
-
     &__title {
       font-size: 2em;
       margin-bottom: 0;
@@ -96,12 +88,12 @@
         left: 0;
         right: 0;
       }
-  
+
       .card {
         position: relative;
         cursor: pointer;
         transition: all 0.2s;
-  
+
         &__btn {
           opacity: 0;
           position: absolute;
@@ -110,10 +102,10 @@
           transform: translateY(-50%);
           transition: all 0.2s;
         }
-  
+
         &:hover {
           opacity: 0.5;
-  
+
           .card__btn {
             opacity: 1;
           }
@@ -121,7 +113,6 @@
       }
     }
   }
-  
 
   .footer {
     grid-auto-flow: column;

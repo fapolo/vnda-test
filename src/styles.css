@@ -34,12 +34,13 @@ body {
     justify-content: space-around;
     margin-bottom: 1rem; }
     .header .header-boxes__search {
-      width: 50vw;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center; }
       .header .header-boxes__search--input {
+        font-family: "PT Sans", sans-serif;
+        outline-width: 0;
         width: 7rem;
         padding: 0.7rem;
         border-top: 0;
@@ -50,10 +51,9 @@ body {
         .header .header-boxes__search--input:focus {
           width: 10rem; }
     .header .header-boxes__login {
-      width: 50vw;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center; }
       .header .header-boxes__login p {
         font-size: 1.4em;
@@ -374,7 +374,8 @@ footer {
   margin-bottom: 2rem;
   font-family: "Playfair Display", serif;
   font-weight: bold;
-  color: #cf6823; }
+  color: #cf6823;
+  text-decoration: underline; }
 
 .svg-icon {
   width: 1em;
@@ -474,14 +475,10 @@ footer {
     justify-content: space-between;
     top: 110px;
     padding: 0 5rem; }
-    .header .header-boxes__search {
-      justify-content: left; }
-      .header .header-boxes__search--input {
-        width: 10rem; }
-        .header .header-boxes__search--input:focus {
-          width: 15rem; }
-    .header .header-boxes__login {
-      justify-content: right; }
+    .header .header-boxes__search--input {
+      width: 10rem; }
+      .header .header-boxes__search--input:focus {
+        width: 15rem; }
   .header .nav {
     position: relative;
     top: 0;

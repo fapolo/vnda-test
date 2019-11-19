@@ -29,13 +29,14 @@
     margin-bottom: 1rem;
 
     &__search {
-      width: 50vw;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
 
       &--input {
+        font-family: $font-ptsans;
+        outline-width: 0;
         width: 7rem;
         padding: 0.7rem;
         border: {
@@ -53,10 +54,9 @@
     }
 
     &__login {
-      width: 50vw;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
 
       p {
