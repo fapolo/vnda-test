@@ -132,7 +132,7 @@ body {
   width: 100vw; }
   .slider div img {
     width: 100%;
-    max-height: 350px;
+    height: 300px;
     object-fit: cover; }
   .slider .slick-dots {
     width: 0;
@@ -151,34 +151,34 @@ body {
       background-color: #cf6823;
       color: #cf6823; }
 
-.highlights {
+.highlights .cardlist {
   display: grid;
   grid-auto-flow: row;
   margin-left: 50%;
   transform: translateX(-50%); }
-  .highlights .card {
+  .highlights .cardlist .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem; }
-    .highlights .card__img {
+    .highlights .cardlist .card__img {
       width: 100%;
       height: 250px;
       object-fit: cover;
       margin-bottom: 1rem; }
-    .highlights .card__name {
+    .highlights .cardlist .card__name {
       font-family: "Playfair Display", serif; }
-    .highlights .card__name, .highlights .card__price {
+    .highlights .cardlist .card__name, .highlights .cardlist .card__price {
       font-size: 1.5em;
       line-height: 1.5em;
       color: #cf6823;
       font-weight: bold;
       text-align: center; }
-    .highlights .card__extra {
+    .highlights .cardlist .card__extra {
       font-size: 1.2em;
       line-height: 1.5em; }
-    .highlights .card__btn {
+    .highlights .cardlist .card__btn {
       margin-top: 0.5rem;
       width: 100%;
       padding: 0.5rem 1.2rem;
@@ -189,7 +189,7 @@ body {
       background-color: #fff;
       cursor: pointer;
       transition: all 0.2s; }
-      .highlights .card__btn:hover, .highlights .card__btn:active {
+      .highlights .cardlist .card__btn:hover, .highlights .cardlist .card__btn:active {
         background-color: #cf6823;
         color: #fff; }
 
@@ -368,6 +368,14 @@ footer {
   text-decoration: none;
   color: inherit; }
 
+.highlights__title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #cf6823; }
+
 .svg-icon {
   width: 1em;
   height: 1em; }
@@ -419,7 +427,7 @@ footer {
     top: 10vh; }
     .header .nav__toggle {
       right: 50vw; }
-  .highlights {
+  .highlights .cardlist {
     width: 70vw;
     grid-auto-flow: column;
     grid-gap: 2rem;
@@ -497,26 +505,31 @@ footer {
           transform: translateX(0); }
         .header .nav__menu--item .nav__menu--link {
           font-size: 1.4em; }
-  .highlights {
+  .slider div img {
+    height: 400px; }
+  .highlights__title {
+    font-size: 2em;
+    margin-bottom: 0; }
+  .highlights .cardlist {
     width: 50%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 0;
     padding-right: 0; }
-    .highlights .card {
+    .highlights .cardlist .card {
       position: relative;
       cursor: pointer;
       transition: all 0.2s; }
-      .highlights .card__btn {
+      .highlights .cardlist .card__btn {
         opacity: 0;
         position: absolute;
         width: 70%;
         top: 40%;
         transform: translateY(-50%);
         transition: all 0.2s; }
-      .highlights .card:hover {
+      .highlights .cardlist .card:hover {
         opacity: 0.5; }
-        .highlights .card:hover .card__btn {
+        .highlights .cardlist .card:hover .card__btn {
           opacity: 1; }
   .footer {
     grid-auto-flow: column;

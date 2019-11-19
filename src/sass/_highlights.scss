@@ -1,8 +1,10 @@
 .highlights {
-  display: grid;
-  grid-auto-flow: row;
-  margin-left: 50%;
-  transform: translateX(-50%);
+
+  .cardlist {
+    display: grid;
+    grid-auto-flow: row;
+    margin-left: 50%;
+    transform: translateX(-50%);
 
   .card {
     display: flex;
@@ -55,4 +57,7 @@
       }
     }
   }
+  }
+
+  
 }

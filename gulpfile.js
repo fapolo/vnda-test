@@ -51,3 +51,9 @@ gulp.task("components", () => {
     return gulp.src("./src/components/**")
     .pipe(gulp.dest("./dist/components"))
 })
+
+//copia o diretorio assets
+gulp.task("assets", () => {
+    return gulp.src("./src/assets/**")
+    .pipe(gulp.dest("./dist/assets"))
+})

@@ -17,3 +17,13 @@
   text-decoration: none;
   color: inherit;
 }
+
+.highlights__title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 2rem;
+  font-family: $font-playfair;
+  font-weight: bold;
+  color: $color-base-highlight;
+  text-decoration: underline;
+}

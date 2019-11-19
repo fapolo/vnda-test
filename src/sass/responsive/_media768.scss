@@ -46,12 +46,14 @@
   }
 
   .highlights {
-    width: 70vw;
-    grid-auto-flow: column;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 50%;
-    transform: translateX(-50%);
+    .cardlist {
+      width: 70vw;
+      grid-auto-flow: column;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .blog {

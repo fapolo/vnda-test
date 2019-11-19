@@ -74,38 +74,54 @@
     }
   }
 
+  .slider {
+  
+    div img {
+      height: 400px;
+    }
+  }
+
   .highlights {
-    width: 50%;
-    padding: {
-      top: 2rem;
-      bottom: 2rem;
-      left: 0;
-      right: 0;
+
+    &__title {
+      font-size: 2em;
+      margin-bottom: 0;
     }
 
-    .card {
-      position: relative;
-      cursor: pointer;
-      transition: all 0.2s;
-
-      &__btn {
-        opacity: 0;
-        position: absolute;
-        width: 70%;
-        top: 40%;
-        transform: translateY(-50%);
-        transition: all 0.2s;
+    .cardlist {
+      width: 50%;
+      padding: {
+        top: 2rem;
+        bottom: 2rem;
+        left: 0;
+        right: 0;
       }
-
-      &:hover {
-        opacity: 0.5;
-
-        .card__btn {
-          opacity: 1;
+  
+      .card {
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s;
+  
+        &__btn {
+          opacity: 0;
+          position: absolute;
+          width: 70%;
+          top: 40%;
+          transform: translateY(-50%);
+          transition: all 0.2s;
+        }
+  
+        &:hover {
+          opacity: 0.5;
+  
+          .card__btn {
+            opacity: 1;
+          }
         }
       }
     }
   }
+  
 
   .footer {
     grid-auto-flow: column;

@@ -5,8 +5,8 @@
   "author": "Fabricio Polo <fabricio.polo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "compile-sass": "node-sass src/sass/main.scss src/styles.css -w",
-    "run-gulp": "gulp clean & gulp styles & gulp scripts & gulp html & gulp components"
+    "compile-sass": "node-sass src/sass/styles.scss src/styles.css -w",
+    "run-gulp": "gulp clean & gulp styles & gulp scripts & gulp html & gulp components & gulp assets"
   },
   "devDependencies": {
     "del": "^5.1.0",
